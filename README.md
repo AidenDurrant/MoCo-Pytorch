@@ -4,7 +4,7 @@ Unofficial Pytorch implemnentation of [MoCoV2](https://arxiv.org/abs/2003.04297)
 
 This repo uses elements from [CMC](https://github.com/HobbitLong/CMC) and [MoCo Code](https://github.com/facebookresearch/moco), in which the MoCoV2 model is implementated into my existing pytorch Boilerplate and workflow. Additionally, this repo aims to align nicely with my implementation of [SimCLR](https://arxiv.org/pdf/2002.05709.pdf) found [here:](https://github.com/AidenDurrant/SimCLR-Pytorch/).
 
-Work in progress, replicating results on ImageNet, TinyImageNet, CIFAR, STL10.
+Work in progress, replicating results on ImageNet, TinyImageNet, CIFAR10, CIFAR100, STL10.
 
   * **Author**: Aiden Durrant
   * **Email**: adurrant@lincoln.ac.uk
@@ -105,7 +105,7 @@ usage: main.py [-h] [-c MY_CONFIG] [--dataset DATASET]
              [--finetune] [--supervised]
 
 Pytorch MocoV2 Args that start with '--' (eg. --dataset) can also be set in a
-config file (<PATH>/MoCo/config.conf or specified via -c). Config
+config file (<PATH>/MoCo-Pytorch/config.conf or specified via -c). Config
 file syntax allows: key=value, flag=true, stuff=[a,b,c] (for details, see
 syntax at https://goo.gl/R74nmi). If an arg is specified in more than one
 place, then commandline values override config file values which override
